@@ -2,7 +2,7 @@
 
 # Seguridad de acceso con AAA, RADIUS y Active Directory
 
-**Matricula:** 20242388 · **Plataforma:** GNS3 · **Dominio:** seguridad.test
+**Autor:** Axel Enrique Vasquez Peña · **Matricula:** 20242388 · **Plataforma:** GNS3 · **Dominio:** seguridad.test
 
 ## Proposito
 
@@ -86,4 +86,4 @@ RADIUS clasico con PAP se utilizo en esta red aislada. No cifra todo el trafico 
 
 ## Estado de la entrega
 
-Configuracion y pruebas documentadas a partir de las salidas y capturas del operador. Pendientes: video real con cara y voz, nombre del estudiante, identificador P# confirmado, TXT final, XML NPS publico revisado y capturas finales adicionales. No se incluyen evidencias simuladas ni se afirman pruebas no realizadas.
+Configuracion y pruebas documentadas a partir de las salidas y capturas del operador. Pendientes: video real con cara y voz, identificador P# confirmado, TXT final, XML NPS publico revisado y capturas finales adicionales. No se incluyen evidencias simuladas ni se afirman pruebas no realizadas.
