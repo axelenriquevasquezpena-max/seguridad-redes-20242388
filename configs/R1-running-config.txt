@@ -1,0 +1,62 @@
+! Copia para documentacion: credenciales ocultas. No importar directamente.
+version 12.4
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+hostname R1
+boot-start-marker
+boot-end-marker
+logging buffered 65536 debugging
+enable secret [OCULTO]
+aaa new-model
+aaa authentication login CONSOLA_RADIUS group radius local
+aaa authorization console
+aaa authorization exec CONSOLA_RADIUS group radius local
+aaa session-id common
+memory-size iomem 5
+clock timezone BOT -4
+no ip icmp rate-limit unreachable
+ip cef
+ip auth-proxy max-nodata-conns 3
+ip admission max-nodata-conns 3
+no ip domain lookup
+ip domain name seguridad.test
+login on-failure log
+login on-success log
+username adminlocal privilege 15 secret [OCULTO]
+ip tcp synwait-time 5
+ip ssh time-out 60
+ip ssh authentication-retries 2
+ip ssh version 2
+interface FastEthernet0/0
+ description Conexion a SW1 Gi0/0
+ ip address 192.168.88.1 255.255.255.0
+ speed 100
+ full-duplex
+interface FastEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+ip radius source-interface FastEthernet0/0
+no cdp log mismatch duplex
+radius-server host 192.168.88.10 auth-port 1812 acct-port 1813 key [OCULTO]
+control-plane
+privilege exec level 5 ping
+privilege exec level 0 show privilege
+privilege exec level 10 show interfaces
+privilege exec level 0 show
+line con 0
+ authorization exec CONSOLA_RADIUS
+ logging synchronous
+ login authentication CONSOLA_RADIUS
+line aux 0
+ authorization exec CONSOLA_RADIUS
+ logging synchronous
+ login authentication CONSOLA_RADIUS
+line vty 0 4
+ transport input none
+end

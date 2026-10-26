@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="460" viewBox="0 0 1120 460" role="img" aria-labelledby="title desc">
+<title id="title">Topologia logica GNS3, matricula 20242388</title><desc id="desc">Router R1 conectado a SW1 en VLAN 10. SRV1 proporciona Active Directory, DNS y NPS. Red 192.168.88.0/24.</desc>
+<rect width="1120" height="460" fill="#f5f7fb"/><g font-family="Arial, sans-serif" fill="#172b4d"><text x="40" y="48" font-size="27" font-weight="bold">Seguridad AAA y RADIUS · GNS3</text><text x="40" y="79" font-size="17">Matricula 20242388 · Red final 192.168.88.0/24 · VLAN 10</text>
+<path d="M300 215H430M690 215H820" stroke="#2563eb" stroke-width="5"/>
+<rect x="40" y="140" width="260" height="165" rx="14" fill="#fff" stroke="#2563eb" stroke-width="2"/>
+<rect x="430" y="140" width="260" height="165" rx="14" fill="#fff" stroke="#2563eb" stroke-width="2"/>
+<rect x="820" y="140" width="260" height="165" rx="14" fill="#fff" stroke="#16856b" stroke-width="2"/>
+<g text-anchor="middle"><text x="170" y="176" font-size="24" font-weight="bold">R1 · Router</text><text x="170" y="207" font-size="17">Cisco c2691 · IOS 12.4</text><text x="170" y="238" font-size="20">192.168.88.1/24</text><text x="170" y="272" font-size="16">Fa0/0</text>
+<text x="560" y="176" font-size="24" font-weight="bold">SW1 · Switch</text><text x="560" y="207" font-size="17">Cisco IOSvL2 · IOS 15.2</text><text x="560" y="238" font-size="20">192.168.88.2/24</text><text x="560" y="272" font-size="16">Gi0/0 a R1 · Gi0/1 a SRV1</text>
+<text x="950" y="176" font-size="24" font-weight="bold">SRV1 · Servidor</text><text x="950" y="207" font-size="17">Windows Server 2022</text><text x="950" y="238" font-size="20">192.168.88.10/24</text><text x="950" y="272" font-size="16">AD DS · DNS · NPS</text></g>
+<text x="40" y="355" font-size="18">R1 y SW1 consultan a NPS: RADIUS UDP 1812 · Grupos AD: Nivel0, Nivel5 y Nivel10</text><text x="40" y="389" font-size="18">Acceso por consola; AUX configurado · SSHv2 habilitado; VTY bloqueadas</text><text x="40" y="426" font-size="15" fill="#52657e">Diagrama logico de documentacion; no es una captura de la aplicacion GNS3.</text></g></svg>

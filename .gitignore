@@ -1,0 +1,18 @@
+# Credenciales y respaldos privados
+*PRIVADO*
+*privado*
+.env
+.env.*
+hosts.yml
+*.pem
+*.key
+*.pfx
+*.p12
+# Imagenes de sistemas y maquinas virtuales
+*.iso
+*.vmdk
+*.vdi
+*.qcow2
+*.nvram
+# Trabajo local
+work/

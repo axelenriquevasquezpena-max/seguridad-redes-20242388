@@ -1,0 +1,35 @@
+! REFERENCIA. Consultas desde una sesion de administracion.
+show version
+show line
+show ip interface brief
+show vlan brief
+show ip ssh
+show clock
+show debugging
+show logging
+! show vlan brief aplica a SW1.
+!
+! Captura temporal de autenticacion y autorizacion. Mantener otra consola abierta.
+debug aaa authentication
+debug aaa authorization
+debug radius
+! Iniciar sesion de prueba; terminar la depuracion al recuperar acceso de administrador.
+undebug all
+show logging
+!
+! Pruebas de usuario: NO ejecutar enable antes de probar permisos.
+show privilege
+ping 192.168.88.10
+show interfaces
+configure terminal
+! Los dos ultimos se permiten o bloquean segun el nivel, ver docs/pruebas.md.
+!
+! Test de autenticacion: sustituir marcador LOCALMENTE. No publicar la clave real.
+! test aaa group radius usuario5 CLAVE_PRIVADA_DEL_USUARIO legacy
+!
+! Guardar desde nivel 15.
+copy running-config startup-config
+!
+! Exportar sin paginacion; ocultar secretos antes de publicar.
+terminal length 0
+show running-config
