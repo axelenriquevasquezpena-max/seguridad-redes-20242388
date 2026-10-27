@@ -1,4 +1,4 @@
-> **Video demostrativo en YouTube: PENDIENTE DE GRABAR Y ENLAZAR.** Duracion maxima: 10 minutos. La entrega no esta completa hasta agregar el enlace aqui y al TXT final.
+> **Video demostrativo en YouTube:** [Ver demostracion del laboratorio](https://youtu.be/5hFR0Tdk6CM)
 
 # Seguridad de acceso con AAA, RADIUS y Active Directory
 
@@ -86,4 +86,4 @@ RADIUS clasico con PAP se utilizo en esta red aislada. No cifra todo el trafico 
 
 ## Estado de la entrega
 
-Configuracion y pruebas documentadas a partir de las salidas y capturas del operador. Pendientes: video real con cara y voz, identificador P# confirmado, TXT final, XML NPS publico revisado y capturas finales adicionales. No se incluyen evidencias simuladas ni se afirman pruebas no realizadas.
+Configuracion y pruebas documentadas a partir de las salidas y capturas del operador. Video enlazado y TXT de entrega actualizado para A2. Pendientes: XML NPS publico revisado y capturas finales adicionales. El contenido y la duracion del video no han sido auditados desde este repositorio. No se incluyen evidencias simuladas ni se afirman pruebas no realizadas.

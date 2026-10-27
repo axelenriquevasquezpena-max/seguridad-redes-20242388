@@ -25,20 +25,20 @@ Ensayar antes. No mostrar contrasenas, claves compartidas, hashes ni XML privado
 1. Subir el video a YouTube y comprobar que el docente puede abrirlo.
 2. Reemplazar la primera linea del README por el enlace real del video.
 3. Incorporar capturas nuevas de la red final y el XML NPS publico despues de revisarlo.
-4. Confirmar el codigo exacto de la asignacion; el nombre del autor ya fue proporcionado.
-5. Crear el TXT con nombre Nombre_20242388_P#.txt, sustituyendo Nombre y P# por los datos reales. No entregar un archivo con esos marcadores.
+4. Codigo confirmado: A2. Autor: Axel Enrique Vasquez Peña.
+5. Crear el TXT con nombre AxelEnriqueVasquezPena_20242388_A2.txt, usando el nombre y el codigo confirmados.
 
 Contenido del TXT:
 
 ```text
 Repositorio: https://github.com/axelenriquevasquezpena-max/seguridad-redes-20242388
-Video: ENLACE_REAL_DE_YOUTUBE
+Video: https://youtu.be/5hFR0Tdk6CM
 ```
 
 ## Pendientes actuales
 
-- Codigo exacto de asignacion pendiente de confirmar.
-- Video no grabado ni enlazado.
+- Codigo de asignacion confirmado: A2.
+- Video proporcionado por el autor y enlazado: https://youtu.be/5hFR0Tdk6CM. Contenido y duracion no auditados.
 - XML NPS publico final no aportado para revision.
 - Capturas finales de privilegios, eventos y respaldo en la nueva red pendientes.
 
